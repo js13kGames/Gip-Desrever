@@ -57,7 +57,6 @@
                 showFinal();
             }else {
                 game.playerMove = false;
-                drawBoard();
                 playGip();
             }
         }
@@ -68,6 +67,7 @@
         toggleButton("none");
         removeEventListeners();
         game.bank = 0;
+        drawBoard();
         setTimeout(gipSpin, 2000);
     }
 
